@@ -18,6 +18,8 @@
   "homepage": "https://github.com/kelaocai/zechat-s#readme",
   "dependencies": {
     "dayjs": "^1.11.0",
-    "tim-js-sdk": "^2.17.1"
+    "tim-js-sdk": "^2.17.1",
+    "tim-upload-plugin": "^1.0.4",
+    "tim-wx-sdk": "^2.17.1"
   }
 }
