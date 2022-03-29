@@ -1,1 +1,23 @@
-{"containers":[]}
+{
+  "containers": [],
+  "config": {
+    "zechat-s": {
+      "containerPort": 80,
+      "minNum": 0,
+      "maxNum": 50,
+      "cpu": 0.25,
+      "mem": 0.5,
+      "policyType": "cpu",
+      "policyThreshold": 60,
+      "envParams": {},
+      "customLogs": "stdout",
+      "initialDelaySeconds": 2,
+      "dataBaseName": "flask_demo",
+      "executeSQLs": [
+        "CREATE DATABASE IF NOT EXISTS flask_demo;",
+        "USE flask_demo;",
+        "CREATE TABLE IF NOT EXISTS `Counters` (`id` int(11) NOT NULL AUTO_INCREMENT, `count` int(11) NOT NULL DEFAULT 1, `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `updatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`id`)) ENGINE = InnoDB DEFAULT CHARSET = utf8;"
+      ]
+    }
+  }
+}
